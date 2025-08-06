@@ -1,13 +1,5 @@
-import Hero from './hero';
-import Navbar from './Navbar';
-
-const Container = () => {
-    return (
-        <div className="container">
-            <Navbar />
-            <Hero />
-        </div>
-    );
+const Container = ({ children }: { children: React.ReactNode }) => {
+    return <div className="container">{children}</div>;
 };
 
 export default Container;
